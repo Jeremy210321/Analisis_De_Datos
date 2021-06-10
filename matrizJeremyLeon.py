@@ -17,10 +17,10 @@ for i in range(filasA):
 print(" ")
 print("\t\t--- Segunda Matriz ---")
 print(" ")
-M2 = []
+matrizB = []
 for i in range(columnasA):
-    M2.append([0] * columnasB)
-    print(M2[i])
+    matrizB.append([0] * columnasB)
+    print(matrizB[i])
 if columnasA != filasB:
     print("No se puede multiplicar estas matrices")
 else:
@@ -45,12 +45,12 @@ else:
 
     for i in range(columnasA):
         for j in range(columnasB):
-            M2[i][j] = int(float(input("Ingrese los valores en (%d,%d) : " % (i, j))))
+            matrizB[i][j] = int(float(input("Ingrese los valores en (%d,%d) : " % (i, j))))
     print(" ")
     print("\t--- Valores ingresados en la segund matriz -------")
     print(" ")
     for i in range(columnasA):
-        print(M2[i])
+        print(matrizB[i])
     print(" ")
     print("\t\t\t----- MULTIPLICACIÓN -----")
     print(" ")
@@ -63,7 +63,7 @@ else:
     for i in range(filasA):
         for j in range(columnasA):
             for k in range(columnasB):
-                matrizR[i][k] = matrizR[i][k]+(matrizA[i][j]*M2[j][k])
+                matrizR[i][k] = matrizR[i][k]+(matrizA[i][j]*matrizB[j][k])
 
     for i in range(filasA):
         M = []
