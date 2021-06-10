@@ -1,5 +1,4 @@
 print("\t\t\t\t---MULTIPLICACIÓN DE MATRICES--")
-print("\n")
 filasA = int(input("ingresa el numero de filas de la PRIMERA matriz: "))
 filasB = int(input("ingresa el numero de filas de la SEGUNDA matriz: "))
 columnasA = int(input("ingresa el numero de columnas de la PRIMERA matriz: "))
